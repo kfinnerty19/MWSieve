@@ -1,6 +1,6 @@
 # MWSieve
 
-# Generalizing and using code from [A2023] https://github.com/oana-adascalitei/MWSieveForDatabase 
+Generalizing and using code from [A2023] https://github.com/oana-adascalitei/MWSieveForDatabase 
 
 Description of files:
 
