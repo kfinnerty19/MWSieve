@@ -12,6 +12,8 @@ Description of files:
 
 - NewFunctions: "ellproj" projects points from J(Q) to E1(Q),E2(Q), "BiellipticModel" takes as input a genus 2 bielliptic curve and outputs a bielliptic model y^2 = f(x^2) [A2023]
 
+- qc_running_file: adapted from https://github.com/bianchifrancesca/QC_bielliptic
+
 - sieve_with_no_known_points: Let X be a genus 2 bielliptic curve over Q, with no known point in X(Q). This is a simple sieve to show that X(Q) = empty set, so QC is not necessary for this case. [A2023]
 
 - TorsionStatistics: We count the number of curves whose Jacobians have torsion subgroups of order 1,2,3,4,5,6,respectively [A2023]
