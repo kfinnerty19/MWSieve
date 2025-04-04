@@ -1,4 +1,3 @@
-load("forsieveqcbiell2.sage")
 load("auxdata.sage") 
 
 OmegaSizes=[]
