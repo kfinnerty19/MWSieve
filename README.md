@@ -8,6 +8,8 @@ Description of files:
 
 - MainCode: we run the Mordell-Weil sieve (MWSieve) inputing the pre-computed information on all curves from allcurves.m, which is successful in eliminating all the extra points resulted from the QC computations stored in fake_allcurves.m [A2023]
 
+- MWSPrimesComputation: We compute the sieving primes for different values of aux_int [A2023]
+
 - MWSieveCode: code taken from https://github.com/steffenmueller/QCMod
 
 - NewFunctions: "ellproj" projects points from J(Q) to E1(Q),E2(Q), "BiellipticModel" takes as input a genus 2 bielliptic curve and outputs a bielliptic model y^2 = f(x^2) [A2023]
