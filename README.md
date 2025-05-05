@@ -4,9 +4,21 @@ Generalizing and using code from [A2023] https://github.com/oana-adascalitei/MWS
 
 Description of files:
 
+- allcurves: equations for the curves of the example in Example.txt
+
 - allcurvesComputation: compute set of known points (pts), information from generators(J), projE1E2, and three smallest primes of good ordinary reduction [A2023]
 
+- allcurvesOutput: for the curves of the example in Example.txt, stores the smallest three primes of ordinary reduction such that p is not 3, the sets of known points on all curves, and orders of generators for the torsion part
+
+- auxdata: for the curves of the example in Example.txt, stores the smallest three primes of ordinary reduction such that p is not 3, the sets of known points on all curves, and the projection of generators of the Jacobian to the corresponding two elliptic curves. 
+
+- Example: for three curves, shows the step-by-step of the process to eliminate all points via the sieve.
+
+- fake_allcurves: for the curves of the example in Example.txt, the torsion information, the sizes of the Omega sets, and extra points from the QC computations that we are trying to eliminate
+
 - MainCode: we run the Mordell-Weil sieve (MWSieve) inputing the pre-computed information on all curves from allcurves.m, which is successful in eliminating all the extra points resulted from the QC computations stored in fake_allcurves.m [A2023]
+
+- MWSPrimes: for the curves of the example in Example.txt, we store the pre-computed mws_primes with respect to aux_int = 1 (MWSPrimes), aux_int = 2 (MWSPrimes2), aux_int = 4 (MWSPrimes4)
 
 - MWSPrimesComputation: We compute the sieving primes for different values of aux_int [A2023]
 
