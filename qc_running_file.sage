@@ -2,7 +2,7 @@ load("auxdata.sage")
 
 OmegaSizes=[]
 
-R = [1..len(equations)] #to consider for i in R indices in equations
+R = [0..len(equations)] #to consider for i in R indices in equations
 n = 25 #precision
 N = 4 #precision for sieve
 
