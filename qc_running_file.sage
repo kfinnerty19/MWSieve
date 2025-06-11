@@ -1,6 +1,6 @@
 load("auxdata.sage") 
 
-OmegaSizes=[]
+#todo: add a way to track Omega in Omegasizes. Either by modifying QC to return it or,...?
 
 R = [0..len(equations)] #to consider for i in R indices in equations
 n = 25 #precision
@@ -47,7 +47,7 @@ for i in R:
             b = False
         
         try:
-            rat_points, other_points, omega = quadratic_chabauty_bielliptic(f, p, n, omega_info=True, up_to_auto=b)
+            rat_points, other_points = quadratic_chabauty_bielliptic(f, p, n, omega_info=True, up_to_auto=b)
         except:
             print("error", p)
         
@@ -58,7 +58,6 @@ for i in R:
                     rat_points_new_complete.extend([P, X(P[0], -P[1], P[2]), X(-P[0], P[1], P[2]), X(-P[0], -P[1], P[2])])
                 rat_points[l] = list(Set(rat_points_new_complete))
                 rat_points[l].sort()
-            OmegaSizes.append(omega)
         
         rat_pts_lists.append(rat_points)
         
