@@ -47,7 +47,7 @@ for i in R:
             b = False
         
         try:
-            rat_points, other_points, omega = quadratic_chabauty_bielliptic_exceptional(f, p, n, omega_info=True, up_to_auto=b)
+            rat_points, other_points, omega = quadratic_chabauty_bielliptic(f, p, n, omega_info=True, up_to_auto=b)
         except:
             print("error", p)
         
