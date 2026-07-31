@@ -1,7 +1,5 @@
 load("auxdata.sage") 
 
-#todo: add a way to track Omega in Omegasizes. Either by modifying QC to return it or,...?
-
 R = [0..len(equations)] #to consider for i in R indices in equations
 n = 25 #precision
 N = 4 #precision for sieve
